@@ -17,7 +17,7 @@ const Game = db.define('game', {
     allowNull: false
   },
   description: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
     allowNull: false
   },
   artwork: {

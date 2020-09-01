@@ -7,7 +7,7 @@ const app = express();
 
 app.use(morgan("dev")); //logging middleware
 app.use(require('body-parser').json()); //json parser
-app.use('/', express.static(path.join(__dirname, 'server/public'))); //static path
+app.use('/', express.static(path.join(__dirname, '..', 'server/public'))); //static path
 
 //require in your routes and use them on your api path
 

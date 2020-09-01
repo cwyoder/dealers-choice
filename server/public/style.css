@@ -1,0 +1,78 @@
+body {
+  font-family: 'Verdana', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: lightgray;
+}
+
+header {
+  background: dimgray;
+  padding: 1rem 0 1rem 1rem;
+  box-shadow: 0px 5px 8px black;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+#mainContent {
+  padding: 100px 30px 30px 30px;
+}
+
+#allGames {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.game {
+  opacity: 0.83;
+}
+
+.game img {
+  width: 100%;
+  margin: 0;
+}
+
+.game a {
+  color: black;
+  text-decoration: none;
+}
+
+.game:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.game:hover img {
+  box-shadow: 0px 0px 8px black;
+}
+
+.game p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.backbutton {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.backbutton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#singleGame {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr minmax(200px, 40%);
+}
+
+.game-img img {
+  width: 100%;
+}
