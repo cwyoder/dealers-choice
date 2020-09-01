@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "server/index.js",
 	"scripts": {
+		"postinstall": "npm run build",
 		"test": "mocha \"**/*.spec.js\"",
 		"build": "webpack",
 		"build:dev": "webpack -w",
